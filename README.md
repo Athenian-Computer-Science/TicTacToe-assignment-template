@@ -1,25 +1,28 @@
-# Master CT Assignment Template 
+# Tic Tac Toe
+Goal: Build a Tic Tac Toe game using a dictionary to model the game board.
 
-Use this master template to create CT Assignment Templates.
+## The board
+* Give a name to every space on the board. For example, TL might be "top left", ML might be "middle left", etc. Be sure they all have unique names.
+* The names will be your keys in the dictionary. Your values will be the symbol in that space. Start with `' '` (space - meaning it's blank). Therefore a key:value pair might be `'TL': ' '`
+* Build your dictionary so all 9 spaces of the Tic Tac Toe board are defined.
 
-## Problem Description
-Problem description goes here. 
+## Printing the board
+* Make a function that uses the dictonary as a parameter.
+* Print the top row of the board using `|` as dividers between each space.
+* Print the first horizontal divider `-+-+-`
+* Print the middle row
+* etc
+* Call the function to make sure it looks OK. Add spaces as needed to make it look better.
 
-* Steps to take go here. 
+## The game
+* Print the board at the start, between every turn, and at the end.
+* X goes first. Ask the player which space to choose, using the keys.
+* O goes next. 
+* Repeat
 
-## Example
-```
-Value to increment? 5
-10
-```
-
-## Suggested Approach
-1) Suggestions go here
-
-## Hints
-* Use the section under `if __name__ == '__main__': ` to change arguments and check your work.
-* When you are happy with your code, use `input()` to prompt the user for a value.
-* Add code to [my_code.py](./my_code.py) to make it do the desired thing.
-* Run your code with: `python my_code.py` or the run button
-* Run your tests with: `pytest`
+## Ending the game
+* How do you want to end? 
+  * Fill all 9 spaces and then check for a winner?
+  * Check for a winner after each turn. End if somebody won - or it's a tie.
+* Think through this before you start typing. You'll want a plan!
 
